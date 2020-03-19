@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <h1> Calculadora de preços </h1>
+<meta charset="UTF-8">
+  <title> Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+<body>
+  <div id="calculadora">
+    Eu quero... <br>
+    <input id= "campo1" type="number" name="campo1"> artigos com 
+    <input id= "campo2" type="number" name="campo1"> palavras cada um <br>
+    <input type="button" value="Calcular" onclick="calculadora()"></input>
+    <div id="results"> <br>
+      <div id="resultado">
+        O total de palavras é <output id="numPalavras"></output><br>
+        O total sem desconto é R$ <output id="totalSemDesconto"></output><br>
+        O total com desconto é R$ <output id="totalComDesconto"></output>
+    </div>
+  </div>
+  </body>
+</html>
