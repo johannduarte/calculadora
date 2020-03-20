@@ -10,13 +10,34 @@
 
 <body>
   <div id="calculadora">
-    Eu quero... <br>
-    <input id= "campo1" type="number" name="campo1"> artigos com 
-    <input id= "campo2" type="number" name="campo1"> palavras cada um <br>
+    Eu quero <br>
+    <input id= "campo1" type="number" name="campo1"> artigos. <br>
+    Cada artigo terá <br> 
+    <input id= "campo2" type="number" name="campo1"> palavras. <br>
+    Sobre a pauta (?),<br>
+    <select id="opcaoPauta">
+      <option value="1">eu tenho uma pauta bem definida</option>
+      <option value="2">eu tenho apenas o tema</option>
+      <option value="3">não tenho nada definido e quero ajuda</option>
+    </select><br>
+    Sobre materiais de referência (?),<br>
+    <select id="opcaoReferencia">
+      <option value="1">eu tenho um modelo a seguir</option>
+      <option value="2">eu tenho fontes para pesquisa</option>
+      <option value="3">tenho modelo e fontes para pesquisa</option>
+      <option value="4">não tenho materiais de referência</option>
+    </select><br>
+    Sobre as imagens,<br>
+      <select id="opcaoImagens">
+        <option value="1">preciso que voce busque e inclua no texto</option>
+        <option value="2">já as tenho, preciso apenas que inclua no texto</option>
+        <option value="3">não serão necessárias</option>
+    </select><br>
     <input type="button" value="Calcular" onclick="calculadora()"></input>
     <div id="results"> <br>
       <div id="resultado">
         O total de palavras é <output id="numPalavras"></output><br>
+        O desconto total é de <output id="desconto"> % </output><br>
         O total sem desconto é R$ <output id="totalSemDesconto"></output><br>
         O total com desconto é R$ <output id="totalComDesconto"></output>
     </div>
