@@ -40,11 +40,11 @@ calculadora(){
   } else descontoPorQuantidade = 0;
   
   if (referencia == 1){
-    descontoReferencia = 0,1;
+    descontoReferencia = 0.1;
   } else if (referencia ==2){
-    descontoReferencia = 0,5;
+    descontoReferencia = 0.5;
   } else if (referencia==3){
-    descontoReferencia = 0,15;
+    descontoReferencia = 0.15;
   } else {
     descontoReferencia = 0;
   }
