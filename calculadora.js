@@ -32,15 +32,15 @@ calculadora(){
   let descontoReferencia = 0;
   
   if (numeroArtigos > 19) {
-    descontoPorQuantidade = 0.2; 
+    descontoPorQuantidade = 0.15; 
   } else if (numeroArtigos > 9) { 
-    descontoPorQuantidade = 0.15;
+    descontoPorQuantidade = 0.10;
   } else if (numeroArtigos > 4) {
-    descontoPorQuantidade = 0.1;
+    descontoPorQuantidade = 0.05;
   } else descontoPorQuantidade = 0;
   
   if (referencia == 1){
-    descontoReferencia = 0.1;
+    descontoReferencia = 0.05;
   } else if (referencia ==2){
     descontoReferencia = 0.05;
   } else if (referencia==3){
